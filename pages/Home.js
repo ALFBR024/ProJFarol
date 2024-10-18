@@ -2,6 +2,11 @@ import * as React from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { BottomNavigation } from 'react-native-paper';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import Feed from "./Feed.js";
+import Perfil from "./Perfil.js";
+import EscolhaChat from "./Chat1.js";
+
+
 
 
 const Home = () => {
@@ -19,7 +24,7 @@ const Home = () => {
       case 'feed':
         return <Feed navigation={navigation} />;
       case 'perfil':
-        return <Perfil />;
+        return <Perfil route={route}  />;
       case 'chat':
         return <EscolhaChat navigation={navigation} />
     }

@@ -6,7 +6,7 @@ class UsuarioService {
 
     findUserUrl(){
 
-        const portDefault = 3002;
+        const portDefault = 3000;
         const portServerJSON = process.env.JSON_SERVER_PORT || portDefault;
         return `http://localhost:${portServerJSON}/Usuarios`;
 
